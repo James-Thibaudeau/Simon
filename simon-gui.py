@@ -12,6 +12,9 @@ from random import randint
 gameColours = []
 playerColours = []
 
+#global count
+count = 1
+
 #colour dictionary
 colours = {
 	1: 'red',
@@ -76,7 +79,7 @@ def addColour(colour):
 def checkColours():
 	global gameColours
 	global playerColours
-	count = 1
+	global count
 	if gameColours == playerColours:
 		count +=1
 		tkMessageBox.showinfo("Good Job!", "Good Job! Keep going!")
@@ -95,7 +98,7 @@ def playerInput():
 
 #game loop
 def game():
-	count = 1
+
 	# while True:
 
 	generateColour()
